@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #2470a0;
+      }
+      
+      html {
+        box-sizing: border-box;
+      }
+      
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+      
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #a696c8;
+        color: #060608;
+      }
+      
+      .container {
+        padding: 0 16px;
+      }
+      
+      .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .title {
+        color: grey;
+      }
+      
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: #eec60a;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      .button:hover {
+        background-color: #555;
+      }
+      
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+      </style>
+  </head>
+  <body>
+    <h1 id="title">For More Information</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" action=''>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="name" name="first-name" placeholder="Jane"type="text" required </label>
+        <label for="last-name">Enter Your Last Name: <input id="name-label" name="last-name" placeholder="Smith" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" name="email-label"required /></label>
+       
+      </fieldset>
+      <fieldset>
+        </fieldset>
+    </label>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     body {
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 0;
+       background-color: #2470a0;
+     }
+     
+     html {
+       box-sizing: border-box;
+     }
+     
+     *, *:before, *:after {
+       box-sizing: inherit;
+     }
+     
+     .column {
+       float: left;
+       width: 33.3%;
+       margin-bottom: 16px;
+       padding: 0 8px;
+     }
+     
+     .card {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       margin: 8px;
+     }
+     
+     .about-section {
+       padding: 50px;
+       text-align: center;
+       background-color: #a696c8;
+       color: #060608;
+     }
+     
+     .container {
+       padding: 0 16px;
+     }
+     
+     .container::after, .row::after {
+       content: "";
+       clear: both;
+       display: table;
+     }
+     
+     .title {
+       color: grey;
+     }
+     
+     .button {
+       border: none;
+       outline: 0;
+       display: inline-block;
+       padding: 8px;
+       color: #eec60a;
+       background-color: #000;
+       text-align: center;
+       cursor: pointer;
+       width: 100%;
+     }
+     
+     .button:hover {
+       background-color: #555;
+     }
+     
+     @media screen and (max-width: 650px) {
+       .column {
+         width: 100%;
+         display: block;
+       }
+    }
+     </style>
+        </label>
+      </fieldset>
+      <fieldset>
+       
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">social media</option>
+            <option value="2">referrel</option>
+            <option value="3">search engine</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="why">Provide a brief statement of what services you may need:
+          <textarea id="why" name="why" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          <fieldset>What/Who brings you to Sherry Jurach?
+
+    <select id="dropdown" name="dropdown">
+
+      <option value="">(select one)</option>
+
+      <option value="1">more information</option>
+
+      <option value="2">starting a business</option>
+      <option value="3">building a brand</option>
+      <option value="4">found you on a nother site and was curious</option>
+      <option value="5">something else</option>
+
+    </select>
+
+    </fieldset>
+
+  <fieldset>Would you recommend Sherry to someone else?
+
+    <label><input type="radio" name="referral" class="inline" value="referral"/>Yes</label>
+
+  <label><input type="radio" name="referral" class="inline" value="referral"/>No</label></fieldset>
+
+  <fieldset>What would you like us to help you with?(check all that apply)
+
+  <label><input type="checkbox" value="suggest" name="price" value="Time" class="inline">more information </label>
+
+  <label><input type="checkbox" value="checkboxes" name="delivery" value="Speed" class="inline">next steps</label>
+
+  <label><input type="checkbox" value="checkboxes" name="packaging" value="gifts" class="inline">how to build my brand</label>
+
+  <label><input type="checkbox" value="checkboxes" name="customer service" value="Case Management" class="inline">i need motivation</label></fieldset>
+
+  <fieldset>
+
+       <label>Additional Comment: <textarea rows="3" cols="30" name="textarea"></textarea></label>
+
+  <button id="submit" type="submit" value="Submit">Submit</button>
+
+  </form>
+
+  </body>
+
+  </html>
+        </label>
+      </fieldset>
+     
+    </form>
+  </body>
+</html>
+</html>

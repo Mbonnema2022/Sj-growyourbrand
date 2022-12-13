@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #2470a0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #a696c8;
+  color: #060608;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #eec60a;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Me Page</h1>
+  <p>With over twenty years experience in Network Marketing and the online world,I can help you facilitate your presence online to attract new leads without chasing them in their Dm's.
+  </p>
+  <p>I have been on social media since its inception and have kept up with all new strategies to successfully grow a business online.I can help you do this now!</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="profile.jpg" alt="Sherry" style="width:50%">
+      <div class="container">
+        <h2>Sherry Jurach</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Talks about #mindset,#coaching, and #leadership.</p>
+        <p>sherryjurach@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./family pic.jpg" alt="Sherrys family" style="width:50%">
+      <div class="container">
+        <h2>My Family</h2>
+        <p class="title">The Jurachs</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>lorem ipsum ipsum lorem</p>
+        <p><button class="button">Ask Me</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="./crazy.jpg" alt="Sherry in crazy mode" style="width:50%">
+      <div class="container">
+        <h2>Sherry Jurach</h2>
+        <p class="title">Designer</p>
+        <p>Some text that</p>
+        <p><button class="button">suggestions</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
